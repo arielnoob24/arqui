@@ -1,6 +1,6 @@
 # AndesTech IT Services — Arquitectura Empresarial
 
-Sitio web informativo (HTML/CSS/JS estático) con la estructura organizacional y el lienzo de modelo de negocio (BMC) de AndesTech IT Services.
+Sitio web corporativo de AndesTech IT Services (HTML/CSS/JS estático): cloud gestionada, ciberseguridad y Service Desk.
 
 **Autores:** Efrain Brito, Ariel Escobar — PUCE
 
