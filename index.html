@@ -3,280 +3,419 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>AndesTech IT Services | Cloud, Ciberseguridad y Soporte TI gestionado</title>
-  <meta name="description" content="AndesTech IT Services: infraestructura cloud gestionada, ciberseguridad y Service Desk 24/7 para medianas y grandes empresas. SLA de 99.9% de disponibilidad.">
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%231f4e9c'/%3E%3Cpath d='M6 24 13 10l4 7 3-4 6 11z' fill='%237fe6ee'/%3E%3C/svg%3E">
+  <title>AndesTech IT Services | Cloud, Ciberseguridad y Soporte 24/7</title>
+  <meta name="description" content="AndesTech opera, protege y da soporte a la infraestructura tecnológica de medianas y grandes empresas. Cloud gestionada, ciberseguridad SOC 24/7 y Service Desk ITIL v4 con SLA de 99.9%.">
+  <meta property="og:title" content="AndesTech IT Services">
+  <meta property="og:description" content="Cloud gestionada, ciberseguridad y Service Desk 24/7 para empresas.">
+  <meta property="og:image" content="assets/img/hero.jpg">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%230a1a3a'/%3E%3Cpath d='M5 25 13 9l4.5 8 3-4.5L27 25z' fill='%2300c2d1'/%3E%3C/svg%3E">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header class="nav">
-    <div class="container nav-inner">
-      <a href="#inicio" class="logo" aria-label="AndesTech IT Services, inicio">
-        <svg class="logo-mark" viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="8" fill="currentColor"/><path d="M6 24 13 10l4 7 3-4 6 11z" fill="#7fe6ee"/></svg>
-        <span>AndesTech <small>IT Services</small></span>
-      </a>
-      <button type="button" class="menu-btn" aria-label="Abrir menú" aria-expanded="false">☰</button>
-      <nav class="nav-links">
-        <a href="#servicios">Servicios</a>
-        <a href="#por-que">Por qué nosotros</a>
-        <a href="#planes">Planes</a>
-        <a href="#proceso">Cómo trabajamos</a>
-        <a href="#nosotros">Nosotros</a>
-        <a href="#contacto" class="btn btn-small">Diagnóstico gratuito</a>
-      </nav>
+  <!-- Barra de anuncio -->
+  <div class="announce">
+    <p>Nuevo: monitoreo de seguridad SOC 24/7 incluido en los planes Avanzado y Premium. <a href="#planes">Ver planes →</a></p>
+  </div>
+
+  <header class="header">
+    <div class="utility">
+      <div class="container utility-inner">
+        <a href="#contacto">¿Sufre un incidente de seguridad?</a>
+        <a href="#contacto">Portal de clientes</a>
+        <a href="mailto:soporte@andestech.ec">Soporte 24/7</a>
+        <a href="#nosotros">Trabaje con nosotros</a>
+        <span>ES</span>
+      </div>
+    </div>
+    <div class="nav">
+      <div class="container nav-inner">
+        <a href="#inicio" class="logo">
+          <svg viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="7" fill="#0a1a3a"/><path d="M5 25 13 9l4.5 8 3-4.5L27 25z" fill="#00c2d1"/></svg>
+          <span>andestech<small>IT Services</small></span>
+        </a>
+        <nav class="menu" aria-label="Principal">
+          <div class="menu-item">
+            <a href="#servicios" class="menu-link">Servicios</a>
+            <div class="mega">
+              <a href="#cloud"><b>Cloud gestionada</b><span>Migración, operación y escalamiento en AWS, Azure y Google Cloud</span></a>
+              <a href="#seguridad"><b>Ciberseguridad</b><span>SOC 24/7, auditorías y cumplimiento ISO/IEC 27001</span></a>
+              <a href="#soporte"><b>Service Desk</b><span>Mesa de ayuda ITIL v4 con SLA medido y reportado</span></a>
+              <a href="#consultoria"><b>Consultoría</b><span>Diagnóstico, planes de migración y pruebas de concepto</span></a>
+            </div>
+          </div>
+          <div class="menu-item">
+            <a href="#clientes" class="menu-link">Soluciones</a>
+            <div class="mega mega-sm">
+              <a href="#clientes" data-tab="migracion"><b>Migración a la nube</b></a>
+              <a href="#clientes" data-tab="regulados"><b>Sectores regulados</b></a>
+              <a href="#clientes" data-tab="criticas"><b>Operaciones críticas</b></a>
+            </div>
+          </div>
+          <div class="menu-item"><a href="#planes" class="menu-link">Planes</a></div>
+          <div class="menu-item"><a href="#nosotros" class="menu-link">Empresa</a></div>
+        </nav>
+        <a href="#contacto" class="btn btn-primary nav-cta">Hablar con un experto</a>
+        <button type="button" class="menu-btn" aria-label="Abrir menú" aria-expanded="false"><span></span><span></span><span></span></button>
+      </div>
     </div>
   </header>
 
   <main>
     <!-- HERO -->
     <section id="inicio" class="hero">
-      <div class="container hero-grid">
-        <div>
-          <p class="eyebrow">Servicios TI gestionados para empresas</p>
-          <h1>Su infraestructura en la nube, <span>segura y siempre disponible.</span></h1>
-          <p class="lead">Gestionamos su nube, protegemos sus datos y resolvemos sus incidentes 24/7, para que su equipo se enfoque en hacer crecer el negocio.</p>
-          <div class="hero-cta">
-            <a href="#contacto" class="btn">Solicitar diagnóstico gratuito</a>
-            <a href="#servicios" class="btn btn-ghost">Ver servicios</a>
-          </div>
+      <img src="assets/img/hero.jpg" alt="" class="hero-bg" fetchpriority="high">
+      <div class="container hero-content">
+        <p class="eyebrow"><span class="pulse"></span> Servicios TI gestionados · Ecuador y la región</p>
+        <h1>Operamos su tecnología.<br><span>Usted hace crecer su negocio.</span></h1>
+        <p class="lead">Infraestructura cloud, ciberseguridad y soporte técnico gestionados por un solo socio, con disponibilidad garantizada del 99.9% y estándares internacionales.</p>
+        <div class="hero-cta">
+          <a href="#contacto" class="btn btn-primary btn-lg">Solicitar diagnóstico gratuito</a>
+          <a href="#plataforma" class="btn btn-ghost btn-lg">Conocer la plataforma</a>
         </div>
-        <div class="hero-panel">
-          <div class="panel-head"><span class="dot"></span> Estado de servicios</div>
-          <div class="panel-row"><span>Infraestructura cloud</span><b class="ok">Operativo</b></div>
-          <div class="panel-row"><span>Monitoreo de seguridad (SOC)</span><b class="ok">Activo 24/7</b></div>
-          <div class="panel-row"><span>Service Desk</span><b class="ok">En línea</b></div>
-          <div class="panel-uptime">
-            <span>Disponibilidad garantizada</span>
-            <strong>99.9%</strong>
-            <div class="bars" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+      </div>
+      <div class="container hero-cards">
+        <a href="#cloud" class="hero-card">
+          <small>Cloud gestionada</small>
+          <b>Migre a la nube sin detener su operación</b>
+          <span class="arrow">→</span>
+        </a>
+        <a href="#seguridad" class="hero-card">
+          <small>Ciberseguridad</small>
+          <b>Monitoreo de amenazas 24/7 desde nuestro SOC</b>
+          <span class="arrow">→</span>
+        </a>
+        <a href="#soporte" class="hero-card">
+          <small>Service Desk</small>
+          <b>Incidentes resueltos más rápido con ITIL v4</b>
+          <span class="arrow">→</span>
+        </a>
+      </div>
+    </section>
+
+    <!-- SOCIOS -->
+    <section class="logos" aria-label="Socios tecnológicos">
+      <div class="container">
+        <p>Operamos sobre las plataformas líderes del mercado</p>
+        <div class="marquee">
+          <div class="marquee-track">
+            <span>aws</span><span>Microsoft Azure</span><span>Google Cloud</span><span>FORTINET</span><span>paloalto</span><span>cisco</span>
+            <span aria-hidden="true">aws</span><span aria-hidden="true">Microsoft Azure</span><span aria-hidden="true">Google Cloud</span><span aria-hidden="true">FORTINET</span><span aria-hidden="true">paloalto</span><span aria-hidden="true">cisco</span>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- TRUST STRIP -->
-    <section class="strip">
-      <div class="container strip-inner">
-        <div><strong>SLA 99.9%</strong><span>de disponibilidad por contrato</span></div>
-        <div><strong>24/7</strong><span>monitoreo y soporte</span></div>
-        <div><strong>ITIL v4</strong><span>gestión de servicios</span></div>
-        <div><strong>ISO/IEC 27001</strong><span>seguridad de la información</span></div>
+    <!-- PLATAFORMA -->
+    <section id="plataforma" class="platform">
+      <div class="container">
+        <header class="head center light">
+          <p class="kicker">Plataforma AndesTech</p>
+          <h2>Una sola plataforma para operar, proteger y dar soporte a su empresa</h2>
+          <p>Unificamos infraestructura, seguridad y soporte bajo un mismo modelo de gestión. Visibilidad completa, un solo responsable y un SLA que respalda cada servicio.</p>
+        </header>
+        <figure class="diagram">
+          <svg viewBox="0 0 1000 570" role="img" aria-label="Diagrama de la plataforma AndesTech: continuidad operativa en el centro, rodeada por los servicios gestionados y los estándares que los respaldan">
+            <defs>
+              <linearGradient id="core" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#00c2d1"/><stop offset="1" stop-color="#1257c9"/></linearGradient>
+              <linearGradient id="mid" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#0f6f86"/><stop offset="1" stop-color="#0b3f66"/></linearGradient>
+              <path id="arcOuter" d="M45 500 A455 455 0 0 1 955 500"/>
+              <path id="arcMid" d="M162 500 A338 338 0 0 1 838 500"/>
+            </defs>
+            <path d="M20 500 A480 480 0 0 1 980 500 Z" fill="#eef3fa"/>
+            <path d="M140 500 A360 360 0 0 1 860 500 Z" fill="url(#mid)"/>
+            <path d="M300 500 A200 200 0 0 1 700 500 Z" fill="url(#core)"/>
+            <text class="arc-title dark"><textPath href="#arcOuter" startOffset="50%" text-anchor="middle">TALENTO CERTIFICADO Y ESTÁNDARES GLOBALES</textPath></text>
+            <text class="arc-title"><textPath href="#arcMid" startOffset="50%" text-anchor="middle">OPERACIÓN GESTIONADA 24/7</textPath></text>
+            <g class="ring-item dark">
+              <text x="158" y="262">ISO/IEC 27001</text>
+              <text x="327" y="132">ITIL v4</text>
+              <text x="673" y="132">Gestión de riesgos</text>
+              <text x="842" y="262">Mejora continua</text>
+            </g>
+            <g class="ring-item">
+              <text x="232" y="405">Cloud</text>
+              <text x="360" y="255">Ciberseguridad</text>
+              <text x="640" y="255">Service Desk</text>
+              <text x="768" y="405">Onboarding</text>
+            </g>
+            <text x="500" y="430" class="core-text">CONTINUIDAD</text>
+            <text x="500" y="466" class="core-text">OPERATIVA</text>
+            <rect x="20" y="500" width="960" height="70" rx="6" fill="#00c2d1"/>
+            <text x="500" y="543" class="bar-text">SLA 99.9% · Portal de cliente · Reportes de servicio · Revisiones trimestrales</text>
+          </svg>
+        </figure>
+        <div class="pillars">
+          <div><h3>Un solo responsable</h3><p>Un contrato, un equipo y un punto de contacto para toda su operación TI.</p></div>
+          <div><h3>Seguridad desde el diseño</h3><p>Cada servicio se opera bajo el marco de gestión de seguridad ISO/IEC 27001.</p></div>
+          <div><h3>Visibilidad total</h3><p>Dashboards de disponibilidad, tickets y reportes de SLA en su portal de cliente.</p></div>
+          <div><h3>Mejora continua</h3><p>Revisiones trimestrales con su equipo para optimizar costos y rendimiento.</p></div>
+        </div>
       </div>
     </section>
 
     <!-- SERVICIOS -->
-    <section id="servicios" class="section">
+    <section id="servicios" class="services">
       <div class="container">
-        <header class="section-head">
+        <header class="head">
           <p class="kicker">Servicios</p>
-          <h2>Un solo proveedor para toda su operación TI</h2>
-          <p>Diseñamos, operamos y protegemos su tecnología con estándares internacionales.</p>
+          <h2>Todo lo que su operación TI necesita, gestionado por expertos</h2>
         </header>
-        <div class="services">
-          <article class="card service">
-            <div class="icon">☁️</div>
-            <h3>Infraestructura cloud gestionada</h3>
-            <p>Desplegamos, administramos y escalamos sus servidores en la nube con monitoreo permanente y respaldo de SLA.</p>
-            <ul>
-              <li>Migración y despliegue en AWS, Azure o Google Cloud</li>
+
+        <article id="cloud" class="feature">
+          <div class="feature-media"><img src="assets/img/cloud.jpg" alt="Racks de servidores en un centro de datos" loading="lazy"></div>
+          <div class="feature-text">
+            <p class="tag">01 · Cloud gestionada</p>
+            <h3>Infraestructura en la nube que simplemente funciona</h3>
+            <p>Diseñamos, desplegamos y operamos sus servidores en la nube. Nosotros nos encargamos del monitoreo, los parches, los respaldos y el escalamiento. Usted solo ve los resultados.</p>
+            <ul class="checks">
+              <li>Migración planificada a AWS, Microsoft Azure o Google Cloud</li>
               <li>Administración de servidores, almacenamiento y redes</li>
-              <li>Respaldos y continuidad operativa</li>
+              <li>Respaldos, recuperación ante desastres y continuidad</li>
+              <li>Disponibilidad garantizada del 99.9% por contrato</li>
             </ul>
-          </article>
-          <article class="card service">
-            <div class="icon">🛡️</div>
-            <h3>Ciberseguridad</h3>
-            <p>Detectamos y respondemos a amenazas antes de que afecten a su negocio, y le ayudamos a cumplir la normativa.</p>
-            <ul>
-              <li>Monitoreo de amenazas 24/7 (SIEM/SOC)</li>
-              <li>Auditorías y pruebas de seguridad</li>
-              <li>Consultoría para ISO/IEC 27001</li>
+            <a href="#contacto" class="link">Hablar con un arquitecto cloud →</a>
+          </div>
+        </article>
+
+        <article id="seguridad" class="feature reverse">
+          <div class="feature-media"><img src="assets/img/seguridad.jpg" alt="Circuito electrónico iluminado" loading="lazy"></div>
+          <div class="feature-text">
+            <p class="tag">02 · Ciberseguridad</p>
+            <h3>Detectamos y detenemos amenazas antes de que le afecten</h3>
+            <p>Nuestro Centro de Operaciones de Seguridad vigila su infraestructura las 24 horas. Combinamos tecnología SIEM con analistas especializados para responder en minutos, no en días.</p>
+            <ul class="checks">
+              <li>Monitoreo y respuesta a amenazas 24/7 (SIEM/SOC)</li>
+              <li>Auditorías de seguridad y pruebas de vulnerabilidades</li>
+              <li>Acompañamiento en el cumplimiento de ISO/IEC 27001</li>
+              <li>Gestión de firewalls y redes con Fortinet, Palo Alto y Cisco</li>
             </ul>
-          </article>
-          <article class="card service">
-            <div class="icon">🎧</div>
-            <h3>Service Desk y soporte TI</h3>
-            <p>Su mesa de ayuda externa, con procesos ITIL v4 y tiempos de respuesta medidos y reportados.</p>
-            <ul>
-              <li>Gestión de incidentes y problemas</li>
-              <li>Portal de tickets y base de conocimiento</li>
-              <li>Reportes periódicos de SLA</li>
+            <a href="#contacto" class="link">Solicitar una evaluación de seguridad →</a>
+          </div>
+        </article>
+
+        <article id="soporte" class="feature">
+          <div class="feature-media"><img src="assets/img/servicedesk.jpg" alt="Centro de soporte técnico con analistas trabajando" loading="lazy"></div>
+          <div class="feature-text">
+            <p class="tag">03 · Service Desk</p>
+            <h3>Su mesa de ayuda, sin tener que construirla</h3>
+            <p>Un equipo de soporte certificado atiende a sus usuarios con procesos ITIL v4. Cada incidente queda registrado, medido y resuelto dentro de los tiempos acordados.</p>
+            <ul class="checks">
+              <li>Gestión de incidentes, problemas y solicitudes</li>
+              <li>Portal de tickets y base de conocimiento para sus usuarios</li>
+              <li>Reportes periódicos de cumplimiento de SLA</li>
+              <li>Atención en horario laboral o 24/7 según su plan</li>
             </ul>
-          </article>
-          <article class="card service">
-            <div class="icon">🧭</div>
-            <h3>Consultoría y transformación digital</h3>
-            <p>Evaluamos su situación actual y planificamos el camino a la nube con proyectos de alcance y precio definidos.</p>
-            <ul>
-              <li>Diagnóstico de infraestructura</li>
-              <li>Planes de migración</li>
-              <li>Pruebas de concepto (PoC)</li>
+            <a href="#contacto" class="link">Conocer el Service Desk →</a>
+          </div>
+        </article>
+
+        <article id="consultoria" class="feature reverse">
+          <div class="feature-media"><img src="assets/img/consultoria.jpg" alt="Consultores celebrando un acuerdo en una reunión" loading="lazy"></div>
+          <div class="feature-text">
+            <p class="tag">04 · Consultoría y transformación digital</p>
+            <h3>Un plan claro para llegar a la nube</h3>
+            <p>Evaluamos su infraestructura actual, identificamos riesgos y oportunidades, y le entregamos una hoja de ruta con alcance, plazos y precio definidos desde el inicio.</p>
+            <ul class="checks">
+              <li>Diagnóstico de infraestructura sin costo</li>
+              <li>Pruebas de concepto (PoC) antes de comprometerse</li>
+              <li>Proyectos de migración a precio fijo</li>
             </ul>
-          </article>
-        </div>
+            <a href="#contacto" class="link">Agendar diagnóstico gratuito →</a>
+          </div>
+        </article>
       </div>
     </section>
 
-    <!-- POR QUÉ -->
-    <section id="por-que" class="section alt">
+    <!-- CIFRAS -->
+    <section class="stats">
+      <div class="stats-left">
+        <h2>Más que soporte: continuidad operativa para su negocio.</h2>
+        <p>Combinamos talento certificado, procesos probados y las mejores plataformas del mercado para que su tecnología no se detenga.</p>
+        <a href="#nosotros" class="btn btn-light">Conozca AndesTech</a>
+      </div>
+      <div class="stats-right">
+        <div><strong data-count="99.9" data-suffix="%">99.9%</strong><span>disponibilidad garantizada por SLA</span></div>
+        <div><strong>24/7</strong><span>monitoreo, seguridad y soporte los 365 días</span></div>
+        <div><strong data-count="30" data-prefix="−" data-suffix="%">−30%</strong><span>meta de reducción del tiempo de resolución (MTTR)</span></div>
+        <div><strong>1</strong><span>solo proveedor para cloud, seguridad y soporte</span></div>
+      </div>
+    </section>
+
+    <!-- CLIENTES / SOLUCIONES -->
+    <section id="clientes" class="solutions">
       <div class="container">
-        <header class="section-head">
-          <p class="kicker">Por qué AndesTech</p>
-          <h2>Tecnología que no se detiene</h2>
+        <header class="head center">
+          <p class="kicker">Soluciones</p>
+          <h2>Diseñadas para empresas que no pueden detenerse</h2>
         </header>
-        <div class="benefits">
-          <article class="benefit">
-            <strong>99.9%</strong>
-            <h3>Disponibilidad garantizada</h3>
-            <p>Nuestro SLA respalda la disponibilidad de su infraestructura cloud. Usted recibe reportes de cumplimiento.</p>
-          </article>
-          <article class="benefit">
-            <strong>ISO 27001</strong>
-            <h3>Sus datos, protegidos</h3>
-            <p>Gestionamos la seguridad de la información bajo el marco ISO/IEC 27001 para cuidar la integridad y confidencialidad de sus datos.</p>
-          </article>
-          <article class="benefit">
-            <strong>ITIL v4</strong>
-            <h3>Incidentes resueltos rápido</h3>
-            <p>Un Service Desk estructurado con buenas prácticas ITIL v4 reduce el tiempo de resolución y mejora continuamente.</p>
-          </article>
-          <article class="benefit">
-            <strong>−TI</strong>
-            <h3>Menos costos internos</h3>
-            <p>Evite montar y mantener su propia área de TI especializada. Obtenga talento certificado bajo una cuota mensual.</p>
-          </article>
+        <div class="tabs" role="tablist" aria-label="Tipos de cliente">
+          <button type="button" role="tab" id="tab-migracion" aria-controls="panel-migracion" aria-selected="true" data-tab="migracion">Migración a la nube</button>
+          <button type="button" role="tab" id="tab-regulados" aria-controls="panel-regulados" aria-selected="false" data-tab="regulados">Sectores regulados</button>
+          <button type="button" role="tab" id="tab-criticas" aria-controls="panel-criticas" aria-selected="false" data-tab="criticas">Operaciones críticas</button>
         </div>
-        <div class="partners">
-          <p>Trabajamos con las plataformas líderes del mercado</p>
-          <ul>
-            <li>AWS</li><li>Microsoft Azure</li><li>Google Cloud</li><li>Fortinet</li><li>Palo Alto Networks</li><li>Cisco</li>
-          </ul>
+        <div class="tab-panel" id="panel-migracion" role="tabpanel" aria-labelledby="tab-migracion">
+          <div>
+            <h3>Para empresas que dejan atrás sus servidores propios</h3>
+            <p>Migramos sus aplicaciones y datos a la nube por etapas, sin interrumpir su operación, y luego la administramos por usted.</p>
+            <ul class="checks">
+              <li>Evaluación de cargas de trabajo y costos</li>
+              <li>Migración por fases con plan de reversa</li>
+              <li>Optimización continua del consumo cloud</li>
+            </ul>
+          </div>
+          <div class="panel-kpi"><strong>Cloud</strong><span>Escale cuando lo necesite y pague solo por lo que usa.</span></div>
+        </div>
+        <div class="tab-panel" id="panel-regulados" role="tabpanel" aria-labelledby="tab-regulados" hidden>
+          <div>
+            <h3>Para finanzas, salud y empresas con datos sensibles</h3>
+            <p>Protegemos la confidencialidad e integridad de su información y le ayudamos a demostrar cumplimiento ante auditores y reguladores.</p>
+            <ul class="checks">
+              <li>Gestión de seguridad bajo ISO/IEC 27001</li>
+              <li>Auditorías periódicas y evidencias de control</li>
+              <li>Monitoreo de amenazas 24/7</li>
+            </ul>
+          </div>
+          <div class="panel-kpi"><strong>ISO 27001</strong><span>Seguridad de la información con estándares globales.</span></div>
+        </div>
+        <div class="tab-panel" id="panel-criticas" role="tabpanel" aria-labelledby="tab-criticas" hidden>
+          <div>
+            <h3>Para negocios donde cada minuto fuera de línea cuesta</h3>
+            <p>Operamos su infraestructura con monitoreo proactivo para anticipar fallas, y con un Service Desk que responde a cualquier hora.</p>
+            <ul class="checks">
+              <li>SLA de 99.9% de disponibilidad</li>
+              <li>Soporte 24/7 con gestor de servicio dedicado</li>
+              <li>Reportes y revisiones trimestrales</li>
+            </ul>
+          </div>
+          <div class="panel-kpi"><strong>99.9%</strong><span>Disponibilidad garantizada por contrato.</span></div>
         </div>
       </div>
     </section>
 
     <!-- PLANES -->
-    <section id="planes" class="section">
+    <section id="planes" class="plans-section">
       <div class="container">
-        <header class="section-head">
+        <header class="head center">
           <p class="kicker">Planes</p>
-          <h2>Elija el nivel de servicio que necesita</h2>
-          <p>Suscripción mensual según nivel de SLA y volumen de usuarios o servidores. El consumo cloud se factura por uso.</p>
+          <h2>Un nivel de servicio para cada etapa de su empresa</h2>
+          <p>Suscripción mensual según nivel de SLA y número de usuarios o servidores. El consumo cloud se factura por uso.</p>
         </header>
         <div class="plans">
           <article class="plan">
             <h3>Básico</h3>
-            <p class="plan-desc">Para empresas que inician su paso a la nube.</p>
-            <ul>
+            <p class="plan-desc">Para empresas que inician su camino a la nube.</p>
+            <a href="#contacto" class="btn btn-outline" data-plan="Básico">Solicitar cotización</a>
+            <ul class="checks">
               <li>Infraestructura cloud gestionada</li>
               <li>Service Desk en horario laboral</li>
               <li>Monitoreo de disponibilidad</li>
               <li>Reporte mensual de SLA</li>
             </ul>
-            <a href="#contacto" class="btn btn-outline" data-plan="Básico">Cotizar</a>
           </article>
           <article class="plan featured">
-            <span class="badge">Más elegido</span>
+            <span class="badge">Recomendado</span>
             <h3>Avanzado</h3>
             <p class="plan-desc">Para operaciones que no pueden detenerse.</p>
-            <ul>
+            <a href="#contacto" class="btn btn-primary" data-plan="Avanzado">Solicitar cotización</a>
+            <ul class="checks">
               <li>Todo lo del plan Básico</li>
               <li>Service Desk 24/7</li>
-              <li>Monitoreo de amenazas (SOC)</li>
+              <li>Monitoreo de amenazas SOC 24/7</li>
               <li>Portal de cliente y dashboards de uptime</li>
               <li>Revisiones trimestrales de servicio</li>
             </ul>
-            <a href="#contacto" class="btn" data-plan="Avanzado">Cotizar</a>
           </article>
           <article class="plan">
             <h3>Premium</h3>
-            <p class="plan-desc">Para sectores con datos sensibles y alta exigencia.</p>
-            <ul>
+            <p class="plan-desc">Para sectores regulados y cuentas de alta exigencia.</p>
+            <a href="#contacto" class="btn btn-outline" data-plan="Premium">Solicitar cotización</a>
+            <ul class="checks">
               <li>Todo lo del plan Avanzado</li>
               <li>Ejecutivo de cuenta y gestor de servicio dedicados</li>
               <li>Auditorías de seguridad periódicas</li>
               <li>Acompañamiento en cumplimiento ISO/IEC 27001</li>
+              <li>Condiciones negociadas a la medida</li>
             </ul>
-            <a href="#contacto" class="btn btn-outline" data-plan="Premium">Cotizar</a>
           </article>
         </div>
-        <p class="note">¿Necesita un proyecto puntual? Migraciones, auditorías y consultorías se cotizan a precio fijo.</p>
+        <p class="plans-note">¿Necesita un proyecto puntual? Migraciones, auditorías y consultorías se cotizan a precio fijo. <a href="#contacto">Contáctenos →</a></p>
       </div>
     </section>
 
     <!-- PROCESO -->
-    <section id="proceso" class="section alt">
+    <section class="process">
       <div class="container">
-        <header class="section-head">
-          <p class="kicker">Cómo trabajamos</p>
-          <h2>De la primera reunión a la operación 24/7</h2>
+        <header class="head">
+          <p class="kicker">Cómo empezamos</p>
+          <h2>De la primera conversación a la operación 24/7</h2>
         </header>
-        <ol class="steps">
-          <li><h3>Diagnóstico gratuito</h3><p>Evaluamos su infraestructura, riesgos y necesidades.</p></li>
-          <li><h3>Propuesta y prueba de concepto</h3><p>Le presentamos la solución y la validamos con una PoC.</p></li>
-          <li><h3>Onboarding y migración</h3><p>Trasladamos sus sistemas a la nube de forma planificada.</p></li>
-          <li><h3>Operación y monitoreo</h3><p>Operamos, protegemos y damos soporte 24/7.</p></li>
-          <li><h3>Mejora continua</h3><p>Reportes de SLA y revisiones trimestrales con su equipo.</p></li>
+        <ol class="timeline">
+          <li><span>01</span><h3>Diagnóstico gratuito</h3><p>Evaluamos su infraestructura, riesgos y necesidades sin costo.</p></li>
+          <li><span>02</span><h3>Propuesta y PoC</h3><p>Validamos la solución con una prueba de concepto antes de firmar.</p></li>
+          <li><span>03</span><h3>Onboarding</h3><p>Migramos sus sistemas de forma planificada y sin interrupciones.</p></li>
+          <li><span>04</span><h3>Operación 24/7</h3><p>Operamos, protegemos y damos soporte todos los días del año.</p></li>
+          <li><span>05</span><h3>Mejora continua</h3><p>Reportes de SLA y revisiones trimestrales con su equipo.</p></li>
         </ol>
       </div>
     </section>
 
-    <!-- SECTORES -->
-    <section class="section">
-      <div class="container">
-        <header class="section-head">
-          <p class="kicker">A quién servimos</p>
-          <h2>Medianas y grandes empresas en transformación digital</h2>
-        </header>
-        <div class="sectors">
-          <article class="card"><h3>Empresas que migran a la nube</h3><p>Organizaciones que necesitan migrar o escalar su infraestructura sin interrumpir la operación.</p></article>
-          <article class="card"><h3>Sectores con datos sensibles</h3><p>Finanzas, salud y otros sectores que requieren cumplimiento normativo y ciberseguridad avanzada.</p></article>
-          <article class="card"><h3>Operaciones críticas</h3><p>Negocios que exigen alta disponibilidad y soporte proactivo, sin margen para caídas.</p></article>
+    <!-- NOSOTROS -->
+    <section id="nosotros" class="about">
+      <div class="container about-grid">
+        <div class="about-media">
+          <img src="assets/img/equipo.jpg" alt="Equipo de ingenieros de AndesTech trabajando" loading="lazy">
+          <div class="about-badge"><strong>2030</strong><span>Meta: ser el proveedor de servicios TI gestionados líder de la región</span></div>
+        </div>
+        <div>
+          <p class="kicker">Sobre AndesTech</p>
+          <h2>Talento certificado, estándares globales y compromiso local</h2>
+          <p>Somos una empresa especializada en infraestructura en la nube, ciberseguridad y soporte técnico gestionado. Acompañamos a medianas y grandes empresas en su transformación digital y aseguramos que su operación no se detenga.</p>
+          <div class="mv">
+            <div>
+              <h3>Nuestra misión</h3>
+              <p>Proveer soluciones tecnológicas seguras, escalables y eficientes que impulsen la transformación digital y garanticen la continuidad operativa de las empresas.</p>
+            </div>
+            <div>
+              <h3>Nuestra visión</h3>
+              <p>Ser en 2030 el proveedor de servicios tecnológicos gestionados líder en la región, reconocido por la excelencia en ciberseguridad, la agilidad en la nube y la innovación constante.</p>
+            </div>
+          </div>
+          <ul class="creds">
+            <li>ISO/IEC 27001</li><li>ITIL v4</li><li>AWS</li><li>Microsoft Azure</li><li>Google Cloud</li>
+          </ul>
         </div>
       </div>
     </section>
 
-    <!-- NOSOTROS -->
-    <section id="nosotros" class="section alt">
-      <div class="container about">
-        <div>
-          <p class="kicker">Nosotros</p>
-          <h2>Talento certificado y estándares globales</h2>
-          <p>AndesTech IT Services es una empresa especializada en infraestructura en la nube, ciberseguridad y soporte técnico gestionado. Nuestro equipo de ingenieros cloud, analistas de seguridad y agentes de Service Desk acompaña a las empresas en su transformación digital y asegura la continuidad de su operación.</p>
-          <div class="mv">
-            <div><h3>Misión</h3><p>Proveer soluciones tecnológicas seguras, escalables y eficientes que impulsen la transformación digital y garanticen la continuidad operativa de las empresas.</p></div>
-            <div><h3>Visión</h3><p>Ser en 2030 el proveedor de servicios tecnológicos gestionados líder en la región, reconocido por su excelencia en ciberseguridad, agilidad en la nube e innovación constante.</p></div>
-          </div>
-        </div>
-        <div class="team">
-          <h3>Nuestras áreas</h3>
-          <ul>
-            <li><b>Infraestructura y Cloud</b><span>Despliegue y operación de plataformas</span></li>
-            <li><b>Ciberseguridad</b><span>SOC, auditorías y cumplimiento</span></li>
-            <li><b>Centro de Soporte</b><span>Service Desk ITIL v4</span></li>
-            <li><b>Ventas Corporativas</b><span>Asesoría consultiva B2B</span></li>
-            <li><b>Alianzas Tecnológicas</b><span>Fabricantes y socios</span></li>
-          </ul>
+    <!-- CTA -->
+    <section class="cta">
+      <img src="assets/img/tierra.jpg" alt="" class="cta-bg" loading="lazy">
+      <div class="container cta-inner">
+        <h2>¿Listo para que su tecnología deje de ser una preocupación?</h2>
+        <p>Agende un diagnóstico gratuito con nuestros especialistas. Sin costo y sin compromiso.</p>
+        <div class="hero-cta">
+          <a href="#contacto" class="btn btn-primary btn-lg">Agendar diagnóstico</a>
+          <a href="tel:+59320000000" class="btn btn-ghost btn-lg">Llamar&nbsp;a&nbsp;ventas</a>
         </div>
       </div>
     </section>
 
     <!-- CONTACTO -->
-    <section id="contacto" class="section contact">
+    <section id="contacto" class="contact">
       <div class="container contact-grid">
         <div>
           <p class="kicker">Contacto</p>
-          <h2>Solicite su diagnóstico gratuito</h2>
-          <p>Cuéntenos sobre su empresa y un especialista le contactará para evaluar su infraestructura, sin costo ni compromiso.</p>
-          <ul class="contact-info">
-            <li>✉️ <a href="mailto:contacto@andestech.ec">contacto@andestech.ec</a></li>
-            <li>📞 <a href="tel:+59320000000">+593&nbsp;2&nbsp;000&nbsp;0000</a></li>
-            <li>📍 Quito, Ecuador</li>
-            <li>🕐 Soporte técnico 24/7 para clientes</li>
-          </ul>
+          <h2>Hable con un experto</h2>
+          <p>Cuéntenos sobre su empresa y un especialista le contactará en menos de un día hábil.</p>
+          <div class="contact-cards">
+            <a href="mailto:contacto@andestech.ec"><small>Ventas</small><b>contacto@andestech.ec</b></a>
+            <a href="tel:+59320000000"><small>Teléfono</small><b>+593&nbsp;2&nbsp;000&nbsp;0000</b></a>
+            <a href="mailto:soporte@andestech.ec"><small>Soporte a clientes 24/7</small><b>soporte@andestech.ec</b></a>
+            <div><small>Oficina</small><b>Quito, Ecuador</b></div>
+          </div>
         </div>
         <form id="contact-form" class="form">
           <div class="field-row">
@@ -287,11 +426,12 @@
             <label>Correo corporativo<input type="email" name="correo" required autocomplete="email"></label>
             <label>Teléfono<input type="tel" name="telefono" autocomplete="tel"></label>
           </div>
-          <label>Servicio de interés
+          <label>¿En qué podemos ayudarle?
             <select name="servicio">
-              <option>Infraestructura cloud gestionada</option>
+              <option>Diagnóstico gratuito</option>
+              <option>Cloud gestionada</option>
               <option>Ciberseguridad</option>
-              <option>Service Desk y soporte TI</option>
+              <option>Service Desk</option>
               <option>Consultoría y migración</option>
               <option>Plan Básico</option>
               <option>Plan Avanzado</option>
@@ -299,7 +439,7 @@
             </select>
           </label>
           <label>Mensaje<textarea name="mensaje" rows="4" placeholder="Cuéntenos brevemente su necesidad"></textarea></label>
-          <button type="submit" class="btn">Enviar solicitud</button>
+          <button type="submit" class="btn btn-primary btn-lg">Enviar solicitud</button>
           <p class="form-status" role="status"></p>
         </form>
       </div>
@@ -308,30 +448,49 @@
 
   <footer class="footer">
     <div class="container footer-grid">
-      <div>
-        <p class="footer-logo">AndesTech <small>IT Services</small></p>
-        <p>Cloud, ciberseguridad y soporte TI gestionado para empresas.</p>
+      <div class="footer-brand">
+        <a href="#inicio" class="logo logo-light">
+          <svg viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="7" fill="#00c2d1"/><path d="M5 25 13 9l4.5 8 3-4.5L27 25z" fill="#0a1a3a"/></svg>
+          <span>andestech<small>IT Services</small></span>
+        </a>
+        <p>Cloud gestionada, ciberseguridad y soporte TI para empresas que no pueden detenerse.</p>
+        <div class="social">
+          <a href="#inicio" aria-label="LinkedIn"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9h4v12H3zM9 9h3.8v1.7h.05c.53-1 1.83-2.05 3.77-2.05C20.6 8.65 21 11.3 21 14.7V21h-4v-5.6c0-1.34-.03-3.06-1.86-3.06-1.87 0-2.14 1.46-2.14 2.96V21H9z"/></svg></a>
+          <a href="#inicio" aria-label="X"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M17.75 3h3.07l-6.7 7.66L22 21h-6.17l-4.83-6.32L5.47 21H2.4l7.17-8.2L2 3h6.33l4.37 5.77zm-1.08 16.2h1.7L7.4 4.73H5.58z"/></svg></a>
+          <a href="#inicio" aria-label="YouTube"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M23 12s0-3.6-.46-5.33a2.78 2.78 0 0 0-1.95-1.96C18.88 4.25 12 4.25 12 4.25s-6.88 0-8.59.46a2.78 2.78 0 0 0-1.95 1.96C1 8.4 1 12 1 12s0 3.6.46 5.33a2.78 2.78 0 0 0 1.95 1.96c1.71.46 8.59.46 8.59.46s6.88 0 8.59-.46a2.78 2.78 0 0 0 1.95-1.96C23 15.6 23 12 23 12zM9.75 15.27V8.73L15.5 12z"/></svg></a>
+        </div>
       </div>
       <div>
         <h4>Servicios</h4>
-        <a href="#servicios">Infraestructura cloud</a>
-        <a href="#servicios">Ciberseguridad</a>
-        <a href="#servicios">Service Desk</a>
-        <a href="#servicios">Consultoría</a>
+        <a href="#cloud">Cloud gestionada</a>
+        <a href="#seguridad">Ciberseguridad</a>
+        <a href="#soporte">Service Desk</a>
+        <a href="#consultoria">Consultoría</a>
+      </div>
+      <div>
+        <h4>Soluciones</h4>
+        <a href="#clientes">Migración a la nube</a>
+        <a href="#clientes">Sectores regulados</a>
+        <a href="#clientes">Operaciones críticas</a>
+        <a href="#planes">Planes</a>
       </div>
       <div>
         <h4>Empresa</h4>
-        <a href="#nosotros">Nosotros</a>
-        <a href="#planes">Planes</a>
+        <a href="#nosotros">Sobre nosotros</a>
+        <a href="#nosotros">Trabaje con nosotros</a>
         <a href="#contacto">Contacto</a>
       </div>
       <div>
         <h4>Clientes</h4>
         <a href="#contacto">Portal de clientes</a>
-        <a href="mailto:soporte@andestech.ec">soporte@andestech.ec</a>
+        <a href="mailto:soporte@andestech.ec">Soporte 24/7</a>
+        <a href="#contacto">Reportar incidente de seguridad</a>
       </div>
     </div>
-    <p class="copyright">© <span id="year">2026</span> AndesTech IT Services. Todos los derechos reservados.</p>
+    <div class="container footer-bottom">
+      <p>© <span id="year">2026</span> AndesTech IT Services. Todos los derechos reservados.</p>
+      <div><a href="#inicio">Política de privacidad</a><a href="#inicio">Términos de servicio</a><a href="#inicio">Seguridad</a></div>
+    </div>
   </footer>
 
   <script src="script.js"></script>
